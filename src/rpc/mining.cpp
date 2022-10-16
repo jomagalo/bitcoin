@@ -178,7 +178,7 @@ static bool getScriptFromDescriptor(const std::string& descriptor, CScript& scri
     const auto desc = Parse(descriptor, key_provider, error, /* require_checksum = */ false);
     if (desc) {
         if (desc->IsRange()) {
-            throw JSONRPCError(RPC_INVALID_PARAMETER, "Ranged descriptor not accepted. Maybe pass through deriveaddresses first?");
+            //throw JSONRPCError(RPC_INVALID_PARAMETER, "Ranged descriptor not accepted. Maybe pass through deriveaddresses first?");
         }
 
         FlatSigningProvider provider;
