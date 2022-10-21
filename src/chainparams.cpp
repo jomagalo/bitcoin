@@ -91,8 +91,8 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].nTimeout = 1628640000; // August 11th, 2021
         consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].min_activation_height = 1; // Approximately November 12th, 2021
 
-        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000100010001");
-        consensus.defaultAssumeValid = uint256S("0x00000000c6489d706319a8072155f1ecfc1876e65e62a09c7df2cfccf5d36ef8"); // 691719
+        consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000000083e271dc525f");
+        consensus.defaultAssumeValid = uint256S("0x0000000000eb13d636ba55b1c44507b7b624b8aa44c5e55bcb40644a4c8fe0e4"); // 691719
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -137,7 +137,12 @@ public:
 
         checkpointData = {
             {
-                { 0, uint256S("0x00000000c6489d706319a8072155f1ecfc1876e65e62a09c7df2cfccf5d36ef8")},
+                { 200, uint256S("0x000000000e7bf2b42228718622d7fa9e128895077a0e6d04f37e39bf71e7275c")},
+                { 500, uint256S("0x0000000032c3a3705619d191accbe6f861f4f78f178b6e28acd569bbc505296e")},
+                { 1000, uint256S("0x000000003d0ecda04e04130209d3d17dd43c19ede60061a4a059a2315a6c9561")},
+                { 2000, uint256S("0x0000000017189e6944eb114bd9538b7b469b1a88a33542244a7de726d7a0245d")},
+                { 4000, uint256S("0x0000000029446db6feda66fcf65221661b11a9d37d08d3b66619d9a9448cac4c")},
+                { 6000, uint256S("0x0000000004c488063f6c07228b1137a041c96a6429865baa4e335e87cac6d96c")},
             }
         };
 
@@ -145,7 +150,12 @@ public:
          // TODO to be specified in a future patch.
         };
 
-        chainTxData = ChainTxData{};
+        chainTxData = ChainTxData{
+            // Data from RPC: getchaintxstats 4096 00000000000000000009c97098b5295f7e5f183ac811fb5d1534040adb93cabd
+            .nTime    = 1666364137,
+            .nTxCount = 6637,
+            .dTxRate  = 0.002707527851498104,
+        };
     }
 };
 
