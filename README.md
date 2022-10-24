@@ -1,4 +1,4 @@
-Bitcoin Core integration/staging tree
+Bitcoin II Core integration/staging tree
 =====================================
 
 https://bitcoincore.org
@@ -22,14 +22,14 @@ For more information read the original Bitcoin whitepaper.
 License
 -------
 
-Bitcoin Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
+Bitcoin II Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see https://opensource.org/licenses/MIT.
 
 Development Process
 -------------------
 
 The `master` branch is regularly built (see `doc/build-*.md` for instructions) and tested, but it is not guaranteed to be
-completely stable. [Tags](https://github.com/bitcoin/bitcoin/tags) are created
+completely stable. [Tags](https://github.com/jomagalo/bitcoin/tags) are created
 regularly from release branches to indicate new official, stable release versions of Bitcoin Core.
 
 The https://github.com/bitcoin-core/gui repository is used exclusively for the
