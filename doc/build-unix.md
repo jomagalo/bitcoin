@@ -55,7 +55,7 @@ Memory Requirements
 --------------------
 
 C++ compilers are memory-hungry. It is recommended to have at least 1.5 GB of
-memory available when compiling Bitcoin Core. On systems with less, gcc can be
+memory available when compiling Bitcoin II Core. On systems with less, gcc can be
 tuned to conserve memory with additional CXXFLAGS:
 
 
