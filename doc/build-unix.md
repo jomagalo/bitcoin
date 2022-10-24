@@ -282,7 +282,7 @@ Hardening enables the following features:
 
 Disable-wallet mode
 --------------------
-When the intention is to run only a P2P node without a wallet, Bitcoin Core may be compiled in
+When the intention is to run only a P2P node without a wallet, Bitcoin II Core may be compiled in
 disable-wallet mode with:
 
     ./configure --disable-wallet
