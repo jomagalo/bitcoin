@@ -1,6 +1,6 @@
 UNIX BUILD NOTES
 ====================
-Some notes on how to build Bitcoin Core in Unix.
+Some notes on how to build Bitcoin II Core in Unix.
 
 (For BSD specific instructions, see `build-*bsd.md` in this directory.)
 
