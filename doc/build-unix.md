@@ -6,7 +6,7 @@ Some notes on how to build Bitcoin II Core in Unix.
 
 Note
 ---------------------
-Always use absolute paths to configure and compile Bitcoin Core and the dependencies.
+Always use absolute paths to configure and compile Bitcoin II Core and the dependencies.
 For example, when specifying the path of the dependency:
 
     ../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$BDB_PREFIX
