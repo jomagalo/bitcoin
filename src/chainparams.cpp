@@ -103,7 +103,7 @@ public:
         pchMessageStart[1] = 0x74;
         pchMessageStart[2] = 0x4e;
         pchMessageStart[3] = 0x6b;
-        nDefaultPort = 8383;
+        nDefaultPort = 8333;
         nPruneAfterHeight = 100000;
         m_assumed_blockchain_size = 1;
         m_assumed_chain_state_size = 6;
@@ -202,7 +202,7 @@ public:
         pchMessageStart[1] = 0x12;
         pchMessageStart[2] = 0x09;
         pchMessageStart[3] = 0x08;
-        nDefaultPort = 18383;
+        nDefaultPort = 18333;
         nPruneAfterHeight = 1000;
         m_assumed_blockchain_size = 1;
         m_assumed_chain_state_size = 2;
@@ -225,7 +225,7 @@ public:
 
         bech32_hrp = "tb";
 
-        vFixedSeeds = std::vector<uint8_t>(std::begin(chainparams_seed_test), std::end(chainparams_seed_test));
+        //vFixedSeeds = std::vector<uint8_t>(std::begin(chainparams_seed_test), std::end(chainparams_seed_test));
 
         fDefaultConsistencyChecks = false;
         fRequireStandard = false;
@@ -326,7 +326,7 @@ public:
         uint256 hash = h.GetHash();
         memcpy(pchMessageStart, hash.begin(), 4);
 
-        nDefaultPort = 38383;
+        nDefaultPort = 38333;
         nPruneAfterHeight = 1000;
 
         genesis = CreateGenesisBlock(1664038289, 2374123249, 0x1d00ffff, 1, 50 * COIN);
@@ -395,7 +395,7 @@ public:
         pchMessageStart[1] = 0xbf;
         pchMessageStart[2] = 0xb5;
         pchMessageStart[3] = 0xda;
-        nDefaultPort = 18484;
+        nDefaultPort = 18444;
         nPruneAfterHeight = args.GetBoolArg("-fastprune", false) ? 100 : 1000;
         m_assumed_blockchain_size = 0;
         m_assumed_chain_state_size = 0;
